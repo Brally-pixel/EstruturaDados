@@ -2,6 +2,7 @@ package estruturadados.listasligadas;
 
 public class ListaLigada<T> {
 
+    public static final String INVALIDA_D = "Posicao invalida [%d]";
     private No<T> primeiroNo;
     private No<T> ultimoNo;
     private int tamanho;
@@ -26,7 +27,7 @@ public class ListaLigada<T> {
 
     public void inserirEm(int posicao, T elemento) {
         if (posicao >= tamanho) {
-            throw new IllegalArgumentException(String.format("Posicao invalida [%d]", posicao));
+            throw new IllegalArgumentException(String.format(INVALIDA_D, posicao));
         }
         if (posicao == 0) {
             No<T> novoNo = new No<T>(elemento);
@@ -36,7 +37,6 @@ public class ListaLigada<T> {
             No<T> novoNo = new No<T>(elemento);
             ultimoNo.setProximo(novoNo);
         } else {
-
             No<T> noAnterior = recuperarNo(posicao - 1);
             No<T> noAtual = recuperarNo(posicao);
             No<T> novoNo = new No<>(elemento);
@@ -63,7 +63,7 @@ public class ListaLigada<T> {
 
     private No<T> recuperarNo(int posicao) {
         if (posicao >= getTamanho()) {
-            throw new IllegalArgumentException(String.format("Posicao invalida [%d]", posicao));
+            throw new IllegalArgumentException(String.format(INVALIDA_D, posicao));
         }
         No<T> resultado = null;
         for (int i = 0; i <= posicao; i++) {
@@ -98,7 +98,7 @@ public class ListaLigada<T> {
 
     public void remover(int posicao) {
         if (posicao >= getTamanho()) {
-            throw new IllegalArgumentException(String.format("Posicao invalida [%d]", posicao));
+            throw new IllegalArgumentException(String.format(INVALIDA_D, posicao));
         }
         if (posicao == 0) {
             No<T> proximoNo = primeiroNo.getProximo();

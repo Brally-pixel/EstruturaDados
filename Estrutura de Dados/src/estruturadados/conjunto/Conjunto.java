@@ -14,7 +14,7 @@ public class Conjunto<T> {
     }
 
     public boolean inserir(T elemento) {
-        if (!isNull(elemento) && !contem(elemento)) {
+        if (!isNull(elemento) && !contemOtimizado(elemento)) {
             elementos.inserir(elemento);
             return true;
         }
@@ -22,7 +22,7 @@ public class Conjunto<T> {
     }
 
     public boolean inserirEm(int posicao, T elemento) {
-        if (!contem(elemento)) {
+        if (!contemOtimizado(elemento)) {
             elementos.inserirEm(posicao, elemento);
             return true;
         }
@@ -55,6 +55,16 @@ public class Conjunto<T> {
 
     public void remover(T elemento) {
         elementos.remover(elemento);
+    }
+
+    private boolean contemOtimizado(T elemento){
+        for (int i = 0; i < elementos.getTamanho(); i++) {
+            T el = elementos.recuperar(i);
+            if (el.hashCode() == elemento.hashCode()){
+                return true;
+            }
+        }
+        return false;
     }
 
 }

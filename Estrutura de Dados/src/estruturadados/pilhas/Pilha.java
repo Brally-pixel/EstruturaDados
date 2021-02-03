@@ -1,10 +1,12 @@
 package estruturadados.pilhas;
 
 
-public class Pilha<T> {
-    private estruturadados.ListasLigadas.ListaDuplamenteLigada<T> elementos;
+import estruturadados.listasligadas.ListaDuplamenteLigada;
 
-    public Pilha(estruturadados.ListasLigadas.ListaDuplamenteLigada<T> elementos) {
+public class Pilha<T> {
+    private ListaDuplamenteLigada<T> elementos;
+
+    public Pilha(ListaDuplamenteLigada<T> elementos) {
         this.elementos = elementos;
     }
 
