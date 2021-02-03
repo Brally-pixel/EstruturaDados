@@ -5,26 +5,55 @@ import estruturadados.listasligadas.ListaLigada;
 public class TabelaEspalhamento<T> {
 
     private ListaLigada<ListaLigada<T>> elementos;
-    private int numeroCategorias = 16;
+    private static final int NUMERO_CATEGORIAS = 16;
+    private int tamanho;
 
     public TabelaEspalhamento() {
         elementos = new ListaLigada<>();
-        for (int i = 0; i < numeroCategorias; i++) {
+        for (int i = 0; i < NUMERO_CATEGORIAS; i++) {
             elementos.inserir(new ListaLigada<T>());
         }
+        tamanho = 0;
     }
 
-    public boolean inserir(T elemento){
-        int numeroEspalhamento = gerarNumeroEspalhamento(elemento);
-        ListaLigada<T> categoria = elementos.recuperar(numeroEspalhamento);
-        if (categoria.contem(elemento)){
+    public boolean inserir(T elemento) {
+        if (contem(elemento)) {
             return false;
         }
+        ListaLigada<T> categoria = gettListaLigada(elemento);
         categoria.inserir(elemento);
+        tamanho++;
         return true;
     }
 
-    private int gerarNumeroEspalhamento(T elemento){
-        return elemento.hashCode() % 16;
+    private int gerarNumeroEspalhamento(T elemento) {
+        return elemento.hashCode() % NUMERO_CATEGORIAS;
+    }
+
+    public void remover(T elemento) {
+        ListaLigada<T> categoria = gettListaLigada(elemento);
+        categoria.remover(elemento);
+        tamanho--;
+    }
+
+    public int getTamanho() {
+        return tamanho;
+    }
+
+    public boolean contem(T elemento) {
+        ListaLigada<T> categoria = gettListaLigada(elemento);
+        return categoria.contem(elemento);
+    }
+
+    private ListaLigada<T> gettListaLigada(T elemento) {
+        int numeroEspalhamento = gerarNumeroEspalhamento(elemento);
+        return elementos.recuperar(numeroEspalhamento);
+    }
+
+    @Override
+    public String toString() {
+        return "TabelaEspalhamento{" +
+                "elementos=" + elementos +
+                '}';
     }
 }
