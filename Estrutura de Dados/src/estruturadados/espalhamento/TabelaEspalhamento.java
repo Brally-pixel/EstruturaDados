@@ -2,6 +2,9 @@ package estruturadados.espalhamento;
 
 import estruturadados.listasligadas.ListaLigada;
 
+import static java.lang.Math.abs;
+import static java.util.Objects.isNull;
+
 public class TabelaEspalhamento<T> {
 
     private ListaLigada<ListaLigada<T>> elementos;
@@ -17,7 +20,7 @@ public class TabelaEspalhamento<T> {
     }
 
     public boolean inserir(T elemento) {
-        if (contem(elemento)) {
+        if (isNull(elemento) || contem(elemento)) {
             return false;
         }
         ListaLigada<T> categoria = gettListaLigada(elemento);
@@ -27,7 +30,7 @@ public class TabelaEspalhamento<T> {
     }
 
     private int gerarNumeroEspalhamento(T elemento) {
-        return elemento.hashCode() % NUMERO_CATEGORIAS;
+        return abs(elemento.hashCode() % NUMERO_CATEGORIAS);
     }
 
     public void remover(T elemento) {

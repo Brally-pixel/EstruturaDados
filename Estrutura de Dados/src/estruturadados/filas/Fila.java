@@ -3,12 +3,16 @@ package estruturadados.filas;
 
 import estruturadados.listasligadas.ListaLigada;
 
-public class Filas<T> {
+public class Fila<T> {
 
     private ListaLigada<T> elementos;
 
-    public Filas(ListaLigada<T> elementos) {
+    public Fila(ListaLigada<T> elementos) {
         this.elementos = elementos;
+    }
+
+    public Fila() {
+
     }
 
     public void enfileirar(T elemento) {

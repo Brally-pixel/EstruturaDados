@@ -126,6 +126,14 @@ public class ListaLigada<T> {
         remover(indice);
     }
 
+    public void inserirPrimeiro(T elemento) {
+        inserirEm(0, elemento);
+    }
+
+    public void inserirUltimo(T elemento) {
+        inserirEm(tamanho - 1, elemento);
+    }
+
 
     @Override
     public String toString() {

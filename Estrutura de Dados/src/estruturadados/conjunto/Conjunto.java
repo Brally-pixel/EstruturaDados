@@ -1,40 +1,27 @@
 package estruturadados.conjunto;
 
 
-import estruturadados.listasligadas.ListaLigada;
-
-import static java.util.Objects.isNull;
+import estruturadados.espalhamento.TabelaEspalhamento;
 
 public class Conjunto<T> {
 
-    private ListaLigada<T> elementos;
+    private TabelaEspalhamento<T> elementos;
 
-    public Conjunto(ListaLigada<T> elementos) {
+    public Conjunto(TabelaEspalhamento<T> elementos) {
         this.elementos = elementos;
     }
 
+    public Conjunto() {
+
+    }
+
     public boolean inserir(T elemento) {
-        if (!isNull(elemento) && !contemOtimizado(elemento)) {
-            elementos.inserir(elemento);
-            return true;
-        }
-        return false;
+        return elementos.inserir(elemento);
     }
 
-    public boolean inserirEm(int posicao, T elemento) {
-        if (!contemOtimizado(elemento)) {
-            elementos.inserirEm(posicao, elemento);
-            return true;
-        }
-        return false;
-    }
-
-    public T recuperar(int posicao) {
-        return elementos.recuperar(posicao);
-    }
 
     public boolean estaVazio() {
-        return elementos.estaVazia();
+        return elementos.getTamanho() == 0;
     }
 
     public int tamanho() {
@@ -45,26 +32,18 @@ public class Conjunto<T> {
         return elementos.contem(elemento);
     }
 
-    public int indice(T elemento) {
-        return elementos.indice(elemento);
-    }
-
-    public void remover(int posicao) {
-        elementos.remover(posicao);
-    }
-
     public void remover(T elemento) {
         elementos.remover(elemento);
     }
 
-    private boolean contemOtimizado(T elemento){
-        for (int i = 0; i < elementos.getTamanho(); i++) {
-            T el = elementos.recuperar(i);
-            if (el.hashCode() == elemento.hashCode()){
-                return true;
-            }
-        }
-        return false;
-    }
+//    private boolean contemOtimizado(T elemento) {
+//        for (int i = 0; i < elementos.getTamanho(); i++) {
+//            T el = elementos.recuperar(i);
+//            if (el.hashCode() == elemento.hashCode()) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
 }

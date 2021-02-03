@@ -10,6 +10,9 @@ public class Pilha<T> {
         this.elementos = elementos;
     }
 
+    public Pilha() {
+    }
+
     public boolean estaVazia() {
         return elementos.estaVazia();
     }
