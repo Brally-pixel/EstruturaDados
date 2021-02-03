@@ -1,6 +1,7 @@
-package EstruturaDados1.Filas;
+package estruturadados.filas;
 
-import EstruturaDados1.ListasLigadas.ListaLigada;
+
+import estruturadados.listasligadas.ListaLigada;
 
 public class Filas<T> {
 

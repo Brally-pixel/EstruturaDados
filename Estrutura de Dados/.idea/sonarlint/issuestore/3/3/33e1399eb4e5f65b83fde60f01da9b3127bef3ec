@@ -1,0 +1,26 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+A
+java:S2275…"*An 'int' is expected rather than a String.(‰ø 
+l
+java:S1192"VDefine a constant instead of duplicating this literal "Posicao invalida [%d]" 3 times.(â©ÚÔ
+`
+java:S22590"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(²µœûÿÿÿÿ
+t
+java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+t
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+[
+java:S2259W"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(òÍ©
+c
+java:S2259."HA "NullPointerException" could be thrown; "noAnterior" is nullable here.(º™äËøÿÿÿÿ
+[
+java:S2259a"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(òÍ©
+ë
+java:S1598"ÍThis file "ListaDuplamenteLigada.java" should be located in "estruturadados\ListasLigadas" directory, not in "C:\Users\Brally\Nova pasta\EstruturaDados\Estrutura de Dados\src\estruturadados\listasLigadas".(©ä­Ø8¹àÈö.
+[
+java:S2259x"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(Ö‘òĞ
+t
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©ä­Ø

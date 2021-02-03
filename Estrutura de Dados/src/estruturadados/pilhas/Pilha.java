@@ -1,11 +1,10 @@
-package EstruturaDados1.pilhas;
+package estruturadados.pilhas;
 
-import EstruturaDados1.ListasLigadas.ListaDuplamenteLigada;
 
 public class Pilha<T> {
-    private ListaDuplamenteLigada<T> elementos;
+    private estruturadados.ListasLigadas.ListaDuplamenteLigada<T> elementos;
 
-    public Pilha(ListaDuplamenteLigada<T> elementos) {
+    public Pilha(estruturadados.ListasLigadas.ListaDuplamenteLigada<T> elementos) {
         this.elementos = elementos;
     }
 
@@ -23,7 +22,7 @@ public class Pilha<T> {
         }
         T resultado = elementos.recuperar(elementos.getTamanho() - 1);
         elementos.remover(resultado);
-        
+
         return resultado;
     }
 }

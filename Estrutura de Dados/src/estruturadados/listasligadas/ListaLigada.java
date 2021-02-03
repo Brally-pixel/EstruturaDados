@@ -1,12 +1,12 @@
-package EstruturaDados1.ListasLigadas;
+package estruturadados.listasligadas;
 
-public class ListaDuplamenteLigada<T> {
+public class ListaLigada<T> {
 
     private No<T> primeiroNo;
     private No<T> ultimoNo;
     private int tamanho;
 
-    public ListaDuplamenteLigada() {
+    public ListaLigada() {
         this.primeiroNo = null;
         this.ultimoNo = null;
         this.tamanho = 0;
@@ -19,7 +19,6 @@ public class ListaDuplamenteLigada<T> {
             ultimoNo = novoNo;
         } else {
             ultimoNo.setProximo(novoNo);
-            novoNo.setAnterior(ultimoNo);
             ultimoNo = novoNo;
         }
         tamanho++;
@@ -32,21 +31,17 @@ public class ListaDuplamenteLigada<T> {
         if (posicao == 0) {
             No<T> novoNo = new No<T>(elemento);
             novoNo.setProximo(primeiroNo);
-            primeiroNo.setAnterior(novoNo);
             primeiroNo = novoNo;
         } else if (posicao == getTamanho() - 1) {
             No<T> novoNo = new No<T>(elemento);
             ultimoNo.setProximo(novoNo);
-            novoNo.setAnterior(ultimoNo);
-            ultimoNo = novoNo;
         } else {
+
             No<T> noAnterior = recuperarNo(posicao - 1);
             No<T> noAtual = recuperarNo(posicao);
-            No<T> novoNo = new No<T>(elemento);
+            No<T> novoNo = new No<>(elemento);
             noAnterior.setProximo(novoNo);
             novoNo.setProximo(noAtual);
-            noAtual.setAnterior(novoNo);
-            novoNo.setAnterior(noAnterior);
         }
     }
 
@@ -108,21 +103,17 @@ public class ListaDuplamenteLigada<T> {
         if (posicao == 0) {
             No<T> proximoNo = primeiroNo.getProximo();
             primeiroNo.setProximo(null);
-            proximoNo.setAnterior(null);
             primeiroNo = proximoNo;
         } else if (posicao == getTamanho() - 1) {
-            No<T> penultimoNo = ultimoNo.getAnterior();
+            No<T> penultimoNo = recuperarNo(getTamanho() - 2);
             penultimoNo.setProximo(null);
-            ultimoNo.setAnterior(null);
             ultimoNo = penultimoNo;
         } else {
+            No<T> noAnterior = recuperarNo(posicao - 1);
+            No<T> proximoNo = recuperarNo(posicao + 1);
             No<T> noAtual = recuperarNo(posicao);
-            No<T> noAnterior = noAtual.getAnterior();
-            No<T> proximoNo = noAtual.getProximo();
             noAnterior.setProximo(proximoNo);
-            proximoNo.setAnterior(noAnterior);
             noAtual.setProximo(null);
-            noAtual.setAnterior(null);
         }
         tamanho--;
     }

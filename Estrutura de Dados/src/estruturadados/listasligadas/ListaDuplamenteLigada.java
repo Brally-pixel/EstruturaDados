@@ -1,12 +1,12 @@
-package EstruturaDados1.ListasLigadas;
+package estruturadados.listasligadas;
 
-public class ListaLigada<T> {
+public class ListaDuplamenteLigada<T> {
 
     private No<T> primeiroNo;
     private No<T> ultimoNo;
     private int tamanho;
 
-    public ListaLigada() {
+    public ListaDuplamenteLigada() {
         this.primeiroNo = null;
         this.ultimoNo = null;
         this.tamanho = 0;
@@ -19,6 +19,7 @@ public class ListaLigada<T> {
             ultimoNo = novoNo;
         } else {
             ultimoNo.setProximo(novoNo);
+            novoNo.setAnterior(ultimoNo);
             ultimoNo = novoNo;
         }
         tamanho++;
@@ -31,17 +32,21 @@ public class ListaLigada<T> {
         if (posicao == 0) {
             No<T> novoNo = new No<T>(elemento);
             novoNo.setProximo(primeiroNo);
+            primeiroNo.setAnterior(novoNo);
             primeiroNo = novoNo;
         } else if (posicao == getTamanho() - 1) {
             No<T> novoNo = new No<T>(elemento);
             ultimoNo.setProximo(novoNo);
+            novoNo.setAnterior(ultimoNo);
+            ultimoNo = novoNo;
         } else {
-
             No<T> noAnterior = recuperarNo(posicao - 1);
             No<T> noAtual = recuperarNo(posicao);
-            No<T> novoNo = new No<>(elemento);
+            No<T> novoNo = new No<T>(elemento);
             noAnterior.setProximo(novoNo);
             novoNo.setProximo(noAtual);
+            noAtual.setAnterior(novoNo);
+            novoNo.setAnterior(noAnterior);
         }
     }
 
@@ -79,44 +84,50 @@ public class ListaLigada<T> {
     public boolean contem(T elemento) {
         for (int i = 0; i < getTamanho(); i++) {
             No<T> noAtual = recuperarNo(i);
-            if (noAtual.getElemento() !=null && noAtual.getElemento().equals(elemento)){
+            if (noAtual.getElemento() != null && noAtual.getElemento().equals(elemento)) {
                 return true;
             }
         }
         return false;
     }
-    public int indice (T elemento){
+
+    public int indice(T elemento) {
         for (int i = 0; i < getTamanho(); i++) {
             No<T> noAtual = recuperarNo(i);
-            if(noAtual.getElemento() != null && noAtual.getElemento().equals(elemento)){
+            if (noAtual.getElemento() != null && noAtual.getElemento().equals(elemento)) {
                 return i;
             }
         }
         return -1;
     }
-    public void remover (int posicao){
+
+    public void remover(int posicao) {
         if (posicao >= getTamanho()) {
             throw new IllegalArgumentException(String.format("Posicao invalida [%d]", posicao));
         }
-        if (posicao == 0){
+        if (posicao == 0) {
             No<T> proximoNo = primeiroNo.getProximo();
             primeiroNo.setProximo(null);
+            proximoNo.setAnterior(null);
             primeiroNo = proximoNo;
-        } else if (posicao == getTamanho() - 1 ){
-            No<T> penultimoNo = recuperarNo(getTamanho() - 2);
+        } else if (posicao == getTamanho() - 1) {
+            No<T> penultimoNo = ultimoNo.getAnterior();
             penultimoNo.setProximo(null);
+            ultimoNo.setAnterior(null);
             ultimoNo = penultimoNo;
-        }else {
-            No<T> noAnterior = recuperarNo(posicao - 1);
-            No<T> proximoNo = recuperarNo(posicao + 1);
+        } else {
             No<T> noAtual = recuperarNo(posicao);
+            No<T> noAnterior = noAtual.getAnterior();
+            No<T> proximoNo = noAtual.getProximo();
             noAnterior.setProximo(proximoNo);
+            proximoNo.setAnterior(noAnterior);
             noAtual.setProximo(null);
+            noAtual.setAnterior(null);
         }
         tamanho--;
     }
 
-    public void remover (T elemento){
+    public void remover(T elemento) {
         int indice = indice(elemento);
         if (indice == -1) {
             throw new IllegalArgumentException(String.format("elemento invalida [%d]", elemento.toString()));

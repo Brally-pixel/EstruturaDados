@@ -1,10 +1,9 @@
-package EstruturaDados1.ListasLigadas;
+package estruturadados.listasligadas;
 
 class No<T> {
     private T elemento;
     private No<T> proximo;
     private No<T> anterior;
-
 
     public No() {
         this.proximo = null;

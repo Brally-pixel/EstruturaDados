@@ -1,0 +1,26 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©ä­Ø
+[
+java:S2259r"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(¬Ø§Î
+[
+java:S2259["EA "NullPointerException" could be thrown; "noAtual" is nullable here.(òÍ©
+t
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+c
+java:S2259+"HA "NullPointerException" could be thrown; "noAnterior" is nullable here.(º™äËøÿÿÿÿ
+l
+java:S1192"VDefine a constant instead of duplicating this literal "Posicao invalida [%d]" 3 times.(â©ÚÔ
+c
+java:S2259q"HA "NullPointerException" could be thrown; "noAnterior" is nullable here.(¼èû½úÿÿÿÿ
+@
+java:S2275z"*An 'int' is expected rather than a String.(‰ø 
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+t
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+á
+java:S1598"ÃThis file "ListaLigada.java" should be located in "estruturadados\ListasLigadas" directory, not in "C:\Users\Brally\Nova pasta\EstruturaDados\Estrutura de Dados\src\estruturadados\listasLigadas".(©ä­Ø8š áÈö.
+[
+java:S2259R"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(òÍ©
+_
+java:S2259k"IA "NullPointerException" could be thrown; "penultimoNo" is nullable here.(±³¬
