@@ -4,6 +4,7 @@ import estruturadados.conjunto.Conjunto;
 import estruturadados.filas.Fila;
 import estruturadados.listasligadas.ListaDuplamenteLigada;
 import estruturadados.listasligadas.ListaLigada;
+import estruturadados.mapas.Mapa;
 import estruturadados.pilhas.Pilha;
 import estruturadados.vetores.Vetor;
 
@@ -46,8 +47,32 @@ public class Main {
             case 7:
                 fazerConjunto();
                 break;
+            case 8:
+                fazerMapas();
+                break;
         }
         scanner.close();
+    }
+
+    private static void fazerMapas() {
+        Mapa<String, Pessoa> mapaPessoas = new Mapa<String, Pessoa>();
+        System.out.println(mapaPessoas.toString());
+        mapaPessoas.adicionar("legal", new Pessoa(1, "TreinaWeb"));
+        System.out.println(mapaPessoas.toString());
+
+        System.out.println(mapaPessoas.contemChave("legal"));
+        System.out.println(mapaPessoas.contemChave("chata"));
+
+        mapaPessoas.adicionar("chata", new Pessoa(2, "Joao"));
+        System.out.println(mapaPessoas.contemChave("chata"));
+
+        mapaPessoas.adicionar("legal", new Pessoa(3, "TreinaWeb Editado"));
+        System.out.println(mapaPessoas.toString());
+
+        mapaPessoas.remover("chata");
+        System.out.println(mapaPessoas.toString());
+
+        mapaPessoas.remover("chave");
     }
 
 

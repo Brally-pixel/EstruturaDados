@@ -1,0 +1,23 @@
+
+t
+java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+l
+java:S1192"VDefine a constant instead of duplicating this literal "Posicao invalida [%d]" 3 times.(â©ÚÔ
+A
+java:S2275…"*An 'int' is expected rather than a String.(‰ø 
+[
+java:S2259x"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(Ö‘òĞ
+[
+java:S2259W"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(òÍ©
+c
+java:S2259."HA "NullPointerException" could be thrown; "noAnterior" is nullable here.(º™äËøÿÿÿÿ
+`
+java:S22590"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(²µœûÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+t
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ
+[
+java:S2259a"EA "NullPointerException" could be thrown; "noAtual" is nullable here.(òÍ©
+t
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆí®éùÿÿÿÿ

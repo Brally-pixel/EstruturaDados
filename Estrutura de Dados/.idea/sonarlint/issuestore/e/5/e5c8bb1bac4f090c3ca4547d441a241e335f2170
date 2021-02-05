@@ -1,0 +1,106 @@
+
+V	java:S106‚"9Replace this use of System.out or System.err by a logger.(óí¯8ŞÑÌö.
+Z	java:S106S"9Replace this use of System.out or System.err by a logger.(ì»±Şøÿÿÿÿ8Àå§ñö.
+Z	java:S106`"9Replace this use of System.out or System.err by a logger.(Ä‰ğáùÿÿÿÿ8Àå§ñö.
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ûÀñ—8ì²ñö.
+V	java:S106®"9Replace this use of System.out or System.err by a logger.(Óä‹ü8Àå§ñö.
+Z	java:S106|"9Replace this use of System.out or System.err by a logger.(ÎÃ¯Üúÿÿÿÿ8ŞÑÌö.
+[	java:S106©"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ŞÑÌö.
+i
+java:S1192v"LDefine a constant instead of duplicating this literal "TreinaWeb 5" 3 times.(¤ŸÍ‰8Àå§ñö.
+V	java:S106³"9Replace this use of System.out or System.err by a logger.(Óä‹ü8ŞÑÌö.
+|
+java:S2293Š"YReplace the type specification in this constructor call with the diamond operator ("<>").(ùõ¡Ìûÿÿÿÿ8Àå§ñö.
+[	java:S106Ì"9Replace this use of System.out or System.err by a logger.(ÆÌ­¡üÿÿÿÿ8Àå§ñö.
+V	java:S106¨"9Replace this use of System.out or System.err by a logger.(¨³Ë8ŞÑÌö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¹ÊÃøÿÿÿÿ8ŞÑÌö.
+[	java:S106œ"9Replace this use of System.out or System.err by a logger.(÷è¤ûÿÿÿÿ8Àå§ñö.
+{
+java:S2293q"YReplace the type specification in this constructor call with the diamond operator ("<>").(Âôòøÿÿÿÿ8Àå§ñö.
+[	java:S106—"9Replace this use of System.out or System.err by a logger.( Ê¼€ıÿÿÿÿ8Àå§ñö.
+Z	java:S106X"9Replace this use of System.out or System.err by a logger.(ì»±Şøÿÿÿÿ8Àå§ñö.
+U	java:S106x"9Replace this use of System.out or System.err by a logger.(óí¯8Àå§ñö.
+{
+java:S2293g"YReplace the type specification in this constructor call with the diamond operator ("<>").(ì¯ê‘ùÿÿÿÿ8Àå§ñö.
+n
+java:S1192u"LDefine a constant instead of duplicating this literal "TreinaWeb 4" 3 times.(””™åûÿÿÿÿ8ıĞŞÌö.
+h
+java:S1192<"FDefine a constant instead of duplicating this literal "legal" 3 times.(¼É¶ôûÿÿÿÿ8Èš³ñö.
+c
+java:S1192@"FDefine a constant instead of duplicating this literal "chata" 4 times.(ûÀñ—8ì²ñö.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ÜäÁæşÿÿÿÿ8Àå§ñö.
+[	java:S106Î"9Replace this use of System.out or System.err by a logger.(ÆÌ­¡üÿÿÿÿ8Àå§ñö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ú’–îıÿÿÿÿ8ŞÑÌö.
+V	java:S106›"9Replace this use of System.out or System.err by a logger.(óí¯8ŞÑÌö.
+Z	java:S106V"9Replace this use of System.out or System.err by a logger.(ì»±Şøÿÿÿÿ8ŞÑÌö.
+Z	java:S106}"9Replace this use of System.out or System.err by a logger.(çğ½Ğûÿÿÿÿ8ŞÑÌö.
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(ˆäæü8¢ä´ñö.
+[	java:S106¬"9Replace this use of System.out or System.err by a logger.(ÿâöøÿÿÿÿ8Àå§ñö.
+U	java:S106]"9Replace this use of System.out or System.err by a logger.(¼„Øƒ8Àå§ñö.
+[	java:S106¤"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8Àå§ñö.
+l
+java:S1192<"JDefine a constant instead of duplicating this literal "TreinaWeb" 6 times.(¼É¶ôûÿÿÿÿ8Àå§ñö.
+p
+java:S1192z"NDefine a constant instead of duplicating this literal "TreinaWeb 100" 3 times.(ëÂÑ“ûÿÿÿÿ8Àå§ñö.
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(ûÀñ—8áƒ°ñö.
+{
+java:S2293P"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹ı·ãÿÿÿÿÿ8Àå§ñö.
+]	java:S125T"<This block of commented-out lines of code should be removed.(ä×™ûúÿÿÿÿ8Àå§ñö.
+[	java:S106É"9Replace this use of System.out or System.err by a logger.(åÍÚİÿÿÿÿÿ8ŞÑÌö.
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(Ô‚ÎÑ8ŞÑÌö.
+|
+java:S2293º"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÓÑˆºøÿÿÿÿ8Àå§ñö.
+V	java:S106±"9Replace this use of System.out or System.err by a logger.(¨³Ë8Àå§ñö.
+U	java:S106À"9Replace this use of System.out or System.err by a logger.(Ë©Í=8ŞÑÌö.
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(óí¯8Àå§ñö.
+[	java:S106Ã"9Replace this use of System.out or System.err by a logger.(Ö°ÚÎüÿÿÿÿ8Àå§ñö.
+[	java:S106–"9Replace this use of System.out or System.err by a logger.(çğ½Ğûÿÿÿÿ8ŞÑÌö.
+V	java:S106Á"9Replace this use of System.out or System.err by a logger.(– ø—8Àå§ñö.
+[	java:S106ª"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ8ŞÑÌö.
+[	java:S106Ê"9Replace this use of System.out or System.err by a logger.(¶Ô›¨şÿÿÿÿ8Àå§ñö.
+[	java:S106È"9Replace this use of System.out or System.err by a logger.(ê•Ïãøÿÿÿÿ8ŞÑÌö.
+n
+java:S1192k"LDefine a constant instead of duplicating this literal "TreinaWeb 3" 4 times.(û¥âşÿÿÿÿÿ8Àå§ñö.
+Z	java:S106{"9Replace this use of System.out or System.err by a logger.(ƒÌ¡¥üÿÿÿÿ8ŞÑÌö.
+[	java:S106¦"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ8Àå§ñö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÙŸÊ’ıÿÿÿÿ8ŞÑÌö.
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(äù‹Ë8Şƒ¯ñö.
+V	java:S106™"9Replace this use of System.out or System.err by a logger.(óí¯8Àå§ñö.
+U	java:S106R"9Replace this use of System.out or System.err by a logger.(çòíØ8ŞÑÌö.
+[	java:S106•"9Replace this use of System.out or System.err by a logger.(ÎÃ¯Üúÿÿÿÿ8ŞÑÌö.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ìœ–¶8ŞÑÌö.
+V	java:S106°"9Replace this use of System.out or System.err by a logger.(¯’Å½8ŞÑÌö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘ÃÚÛúÿÿÿÿ8ŞÑÌö.
+U	java:S106="9Replace this use of System.out or System.err by a logger.(ˆäæü8”ú­ñö.
+[	java:S106«"9Replace this use of System.out or System.err by a logger.(†Á¸ÿÿÿÿÿ8ŞÑÌö.
+[	java:S106…"9Replace this use of System.out or System.err by a logger.(ÜäÁæşÿÿÿÿ8Àå§ñö.
+Z	java:S106~"9Replace this use of System.out or System.err by a logger.( Ê¼€ıÿÿÿÿ8Àå§ñö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(­ü™Áüÿÿÿÿ8ŞÑÌö.
+Z	java:S106c"9Replace this use of System.out or System.err by a logger.(Ä‰ğáùÿÿÿÿ8Àå§ñö.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ë®°î8ŞÑÌö.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(ˆäæü8ì•«ñö.
+[	java:S106”"9Replace this use of System.out or System.err by a logger.(ƒÌ¡¥üÿÿÿÿ8ŞÑÌö.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(°àš8ŞÑÌö.
+n
+java:S1192^"LDefine a constant instead of duplicating this literal "TreinaWeb 1" 5 times.(çÓõõøÿÿÿÿ8ıĞŞÌö.
+U	java:S106m"9Replace this use of System.out or System.err by a logger.(Óä‹ü8Àå§ñö.
+U	java:S106U"9Replace this use of System.out or System.err by a logger.(±¸Ú8ŞÑÌö.
+U	java:S106h"9Replace this use of System.out or System.err by a logger.(ı¢Ê‡8Àå§ñö.
+n
+java:S1192_"LDefine a constant instead of duplicating this literal "TreinaWeb 2" 5 times.(è¯â«üÿÿÿÿ8ŞÑÌö.
+U	java:S106I"9Replace this use of System.out or System.err by a logger.(ˆäæü8Áµñö.
+V	java:S106µ"9Replace this use of System.out or System.err by a logger.(Üı©Æ8Àå§ñö.
+Y	java:S125²"<This block of commented-out lines of code should be removed.(ÇŒ‡Æ8Àå§ñö.
+U	java:S106W"9Replace this use of System.out or System.err by a logger.(çòíØ8ŞÑÌö.
+V	java:S106‘"9Replace this use of System.out or System.err by a logger.(óí¯8Àå§ñö.
+[	java:S106Ç"9Replace this use of System.out or System.err by a logger.(îğğšüÿÿÿÿ8ŞÑÌö.
+Z	java:S106b"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ8ŞÑÌö.
+C	java:S131""Add a default case to this switch.(†²·¹úÿÿÿÿ8ŞÑÌö.
+{
+java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÅØ²ùÿÿÿÿ8Àå§ñö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(£¬ƒ°úÿÿÿÿ8ŞÑÌö.
+V	java:S106´"9Replace this use of System.out or System.err by a logger.(¯’Å½8ŞÑÌö.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Şœçêşÿÿÿÿ8ŞÑÌö.
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(÷è¤ûÿÿÿÿ8Àå§ñö.
+{
+java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(—Ëıùÿÿÿÿ8•¨Åñö.

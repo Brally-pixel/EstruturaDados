@@ -138,15 +138,16 @@ public class ListaLigada<T> {
     @Override
     public String toString() {
         if (estaVazia()) {
-            return "ListaLigada{}";
+            return "Lista []";
         } else {
-            No<T> noAtual = primeiroNo;
+            No<T> noAtual = this.primeiroNo;
             StringBuilder sb = new StringBuilder();
             sb.append("Lista [");
             sb.append(noAtual.getElemento() != null ? noAtual.getElemento().toString() : "<NULO>");
             sb.append(",");
-            while (noAtual.getElemento() != null) {
-                sb.append(noAtual.getProximo().getElemento() != null ? noAtual.getProximo().getElemento().toString() : "<NULO>");
+            while (noAtual.getProximo() != null) {
+                sb.append(noAtual.getProximo().getElemento() != null ? noAtual.getProximo().getElemento().toString()
+                        : "<NULO>");
                 sb.append(",");
                 noAtual = noAtual.getProximo();
             }
