@@ -1,5 +1,8 @@
 package estruturadados;
 
+import estruturadados.arvorebinaria.Arvore;
+import estruturadados.arvorebinaria.NoArvore;
+import estruturadados.arvorebinaria.NoArvorePessoa;
 import estruturadados.conjunto.Conjunto;
 import estruturadados.filas.Fila;
 import estruturadados.listasligadas.ListaDuplamenteLigada;
@@ -8,6 +11,7 @@ import estruturadados.mapas.Mapa;
 import estruturadados.pilhas.Pilha;
 import estruturadados.vetores.Vetor;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -50,8 +54,33 @@ public class Main {
             case 8:
                 fazerMapas();
                 break;
+            case 9:
+                fazerArvore();
+                break;
         }
         scanner.close();
+    }
+
+    private static void fazerArvore() {
+
+        Arvore<Pessoa> pessoaArvore = new Arvore<>();
+        System.out.println(pessoaArvore.toString());
+        pessoaArvore.inserir(new NoArvorePessoa(new Pessoa(5, "TreinaWeb 5")));
+        System.out.println(pessoaArvore.toString());
+        pessoaArvore.inserir(new NoArvorePessoa(new Pessoa(4, "TreinaWeb 4")));
+        System.out.println(pessoaArvore.toString());
+        pessoaArvore.inserir(new NoArvorePessoa(new Pessoa(6, "TreinaWeb 6")));
+        System.out.println(pessoaArvore.toString());
+        pessoaArvore.inserir(new NoArvorePessoa(new Pessoa(7, "TreinaWeb 7")));
+        System.out.println(pessoaArvore.toString());
+
+        System.out.println("Busca...");
+
+        NoArvore<Pessoa> noPessoa7 = new NoArvorePessoa(new Pessoa(7, "TreinaWeb 7"));
+        NoArvore<Pessoa> noPessoa1 = new NoArvorePessoa(new Pessoa(1, "TreinaWeb 1"));
+
+        System.out.println(pessoaArvore.buscar(noPessoa7));
+        System.out.println(pessoaArvore.buscar(noPessoa1));
     }
 
     private static void fazerMapas() {
