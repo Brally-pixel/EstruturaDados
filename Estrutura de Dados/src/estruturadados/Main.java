@@ -77,10 +77,20 @@ public class Main {
         System.out.println("Busca...");
 
         NoArvore<Pessoa> noPessoa7 = new NoArvorePessoa(new Pessoa(7, "TreinaWeb 7"));
-        NoArvore<Pessoa> noPessoa1 = new NoArvorePessoa(new Pessoa(1, "TreinaWeb 1"));
+        // ERROR NoArvore<Pessoa> noPessoa1 = new NoArvorePessoa(new Pessoa(1, "TreinaWeb 1"));
 
         System.out.println(pessoaArvore.buscar(noPessoa7));
-        System.out.println(pessoaArvore.buscar(noPessoa1));
+        //System.out.println(pessoaArvore.buscar(noPessoa1));
+
+
+        System.out.println("----------------EM ORDEM------------------------");
+        pessoaArvore.emOrdem();
+
+        System.out.println("----------------PRE ORDEM-----------------------");
+        pessoaArvore.preOrdem();
+
+        System.out.println("----------------POS ORDEM-----------------------");
+        pessoaArvore.posOrdem();
     }
 
     private static void fazerMapas() {

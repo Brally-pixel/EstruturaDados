@@ -29,3 +29,9 @@ X
 (src/estruturadados/mapas/Associacao.java,3\8\382877db73d0432a72ab7694b085c77872b6a114
 R
 "src/estruturadados/mapas/Mapa.java,5\e\5e8f3b4b668db288eaf49c992aa0fd122e740ae4
+^
+.src/estruturadados/arvorebinaria/NoArvore.java,2\4\24dad4dfea2e48cf4c7e1cce4e754f1fea87622a
+d
+4src/estruturadados/arvorebinaria/NoArvorePessoa.java,b\3\b31699c4b3f34b24ad0ea1ac0bd4bea7946bc6d8
+\
+,src/estruturadados/arvorebinaria/Arvore.java,c\3\c345264183c2c6fdbf1f1b65cf9c9bd550715ca8

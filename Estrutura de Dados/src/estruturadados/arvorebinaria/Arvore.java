@@ -64,6 +64,67 @@ public class Arvore<T> {
 
     }
 
+    public void emOrdem() {
+        emOrdem(this.raiz);
+    }
+
+    private void emOrdem(NoArvore<T> ref) {
+        if (!isNull(ref.getNoEsquerdo())) {
+            emOrdem(ref.getNoEsquerdo());
+            System.out.println(ref.getValor().toString());
+            if (!isNull(ref.getNoDireito())) {
+                emOrdem(ref.getNoDireito());
+            }
+        } else {
+            System.out.println(ref.getValor().toString());
+            if (!isNull(ref.getNoDireito())) {
+                emOrdem(ref.getNoDireito());
+            }
+        }
+    }
+
+    public void preOrdem() {
+        preOrdem(this.raiz);
+
+    }
+
+    private void preOrdem(NoArvore<T> ref) {
+        System.out.println(ref.getValor().toString());
+        if (!isNull(ref.getNoEsquerdo())) {
+            preOrdem(ref.getNoEsquerdo());
+            if (!isNull(ref.getNoDireito())) {
+                preOrdem(ref.getNoDireito());
+
+            }
+        } else {
+            if (!isNull(ref.getNoDireito())) {
+                preOrdem(ref.getNoDireito());
+            }
+        }
+
+    }
+
+    public void posOrdem() {
+        posOrdem(this.raiz);
+    }
+
+    private void posOrdem(NoArvore<T> ref) {
+        if (!isNull(ref.getNoEsquerdo())) {
+            posOrdem(ref.getNoEsquerdo());
+            if (!isNull(ref.getNoDireito())) {
+                posOrdem(ref.getNoDireito());
+            }
+            System.out.println(ref.getValor().toString());
+        } else {
+            if (!isNull(ref.getNoDireito())) {
+                posOrdem(ref.getNoDireito());
+                System.out.println(ref.getValor().toString());
+            } else {
+                System.out.println(ref.getValor().toString());
+            }
+        }
+    }
+
     public NoArvore<T> buscar(NoArvore<T> noBusca) {
         return this.buscar(this.raiz, noBusca);
     }
