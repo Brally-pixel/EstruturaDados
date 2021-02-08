@@ -11,7 +11,6 @@ import estruturadados.mapas.Mapa;
 import estruturadados.pilhas.Pilha;
 import estruturadados.vetores.Vetor;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -91,6 +90,9 @@ public class Main {
 
         System.out.println("----------------POS ORDEM-----------------------");
         pessoaArvore.posOrdem();
+
+        System.out.println("----------------ALTURA-----------------------");
+        pessoaArvore.altura();
     }
 
     private static void fazerMapas() {

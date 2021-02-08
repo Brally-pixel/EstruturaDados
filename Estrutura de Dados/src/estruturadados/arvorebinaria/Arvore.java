@@ -124,6 +124,19 @@ public class Arvore<T> {
             }
         }
     }
+    public int altura (){
+        return altura(raiz);
+    }
+
+    private int altura(NoArvore<T> ref) {
+
+        if (isNull(ref)) {
+            return -1;
+        }
+        int altEsquerda = altura(ref.getNoEsquerdo());
+        int altDireita = altura(ref.getNoDireito());
+        return altEsquerda > altDireita ? altEsquerda + 1 : altDireita + 1;
+    }
 
     public NoArvore<T> buscar(NoArvore<T> noBusca) {
         return this.buscar(this.raiz, noBusca);
